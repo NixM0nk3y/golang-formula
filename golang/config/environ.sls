@@ -36,7 +36,7 @@ golang-config-file-managed-environ_file:
 golang-config-file-symlink-{{ i }}-golang-binary:
   file.symlink:
     - name: /usr/local/bin/{{ i }}
-    - target: {{ golang.linux.base_dir }}/{{ i }}
+    - target: {{ golang.linux.base_dir }}/go/bin/{{ i }}
     - mode: '0755'
     - force: True
 
